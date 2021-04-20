@@ -1,0 +1,13 @@
+//GENERAL STYLES
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Gotham Pro Bold', sans-serif;
+    color: $main-text;
+    font-weight: 700;
+    
+}
+body {
+    margin: 0;
+    padding: 0;
+}

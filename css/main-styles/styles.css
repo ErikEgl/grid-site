@@ -1,0 +1,21 @@
+.header {
+  display: grid;
+  grid-template-columns: 1.5fr 5fr 2fr;
+  grid-template-areas: 'header-logo header-nav header-contacts' '. header-text .';
+  grid-template-rows: 2fr 10fr;
+  min-height: 600px;
+  align-items: center;
+  grid-column-gap: 1em;
+  background-color: header_BG; }
+  .header-logo {
+    grid-area: header-logo;
+    justify-self: center; }
+  .header-nav {
+    grid-area: header-nav;
+    display: grid;
+    grid-auto-flow: column; }
+  .header-contacts {
+    grid-area: header-contacts;
+    justify-self: end; }
+  .header-text {
+    grid-area: header-text; }

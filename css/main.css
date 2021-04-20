@@ -1,0 +1,106 @@
+/*<----- Fonts ----->*/
+@font-face {
+  font-family: 'Circe Light';
+  src: url("../fonts/Circe-Light.eot");
+  src: url("../fonts/Circe-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Light.woff") format("woff"), url("../fonts/Circe-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Circe Regular';
+  src: url("../fonts/Circe-Regular.eot");
+  src: url("../fonts/Circe-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Regular.woff") format("woff"), url("../fonts/Circe-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Circe Bold';
+  src: url("../fonts/Circe-Bold.eot");
+  src: url("../fonts/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Bold.woff") format("woff"), url("../fonts/Circe-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Gotham Pro Medium';
+  src: url("../fonts/GothamPro-Medium.eot");
+  src: url("../fonts/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Gotham Pro Bold';
+  src: url("../fonts/GothamPro-Bold.eot");
+  src: url("../fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Gotham Pro Bold', sans-serif;
+  color: black;
+  font-weight: 700; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.header {
+  display: grid;
+  grid-template-columns: 1.5fr 5fr 2fr;
+  grid-template-areas: 'header-logo header-nav header-contacts' '. header-text .';
+  grid-template-rows: 2fr 10fr 1fr;
+  min-height: 600px;
+  align-items: center;
+  grid-column-gap: 1em;
+  background-color: #fff9e6;
+  position: relative;
+  overflow: hidden; }
+  .header .circle {
+    border-radius: 50%;
+    background-color: #ffcd33;
+    position: absolute; }
+    .header .circle_small {
+      top: -30px;
+      left: -50px;
+      height: 170px;
+      width: 170px;
+      z-index: 0; }
+    .header .circle_big {
+      top: -30px;
+      right: -50px;
+      height: 600px;
+      width: 600px;
+      z-index: 0; }
+  .header-logo {
+    grid-area: header-logo;
+    justify-self: center;
+    z-index: 1; }
+  .header-nav {
+    grid-area: header-nav;
+    display: grid;
+    grid-auto-flow: column;
+    z-index: 1; }
+    .header-nav__link {
+      margin-right: 20px;
+      text-decoration: none;
+      color: black; }
+  .header-contacts {
+    grid-area: header-contacts;
+    justify-self: center;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    text-transform: uppercase;
+    font-size: 14px; }
+    .header-contacts_phone {
+      font-size: 20px;
+      color: black; }
+  .header-text {
+    grid-area: header-text;
+    z-index: 1; }
